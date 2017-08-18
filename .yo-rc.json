@@ -1,8 +1,7 @@
 {
   "generator-asi-templates-backend": {
     "promptValues": {
-      "packageName": "asi.templates.backend",
-      "nativeLanguage": "fr"
+      "packageName": "asi.templates.backend"
     },
     "asiGenVersion": "0.1.0",
     "baseName": "asi-templates-backend",
@@ -15,18 +14,13 @@
     "prodDatabaseType": "postgresql",
     "messageBroker": false,
     "buildTool": "maven",
-    "rememberMeKey": "61ae164afcc994fafa0fd34754cf1a68030d8d73",
+    "rememberMeKey": "f4fbd5f0003659889ba8a9298bf4b779097b23ba",
     "applicationType": "server",
     "testFrameworks": [],
     "asiPrefix": "asi",
     "skipClient": true,
     "skipUserManagement": true,
-    "enableTranslation": true,
-    "nativeLanguage": "fr",
-    "languages": [
-      "fr",
-      "en"
-    ],
+    "enableTranslation": false,
     "clientPackageManager": "npm"
   }
 }

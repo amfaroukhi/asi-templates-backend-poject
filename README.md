@@ -1,38 +1,83 @@
-# generator-asi-templates-backend [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Générateur pour un backend type
+# asi-templates-backend
+This application was generated using JHipster 0.1.0, you can find documentation and help at [https://.../documentation-archive/v0.1.0](https://.../documentation-archive/v0.1.0).
 
-## Installation
+## Development
 
-First, install [Yeoman](http://yeoman.io) and generator-asi-templates-backend using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+To start your application in the dev profile, simply run:
 
-```bash
-npm install -g yo
-npm install -g generator-asi-templates-backend
-```
-
-Then generate your new project:
-
-```bash
-yo asi-templates-backend
-```
-
-## Getting To Know Yeoman
-
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
-
-## License
-
-unlicense © [ASI]()
+    ./mvnw
 
 
-[npm-image]: https://badge.fury.io/js/generator-asi-templates-backend.svg
-[npm-url]: https://npmjs.org/package/generator-asi-templates-backend
-[travis-image]: https://travis-ci.org/amfaroukhi/generator-asi-templates-backend.svg?branch=master
-[travis-url]: https://travis-ci.org/amfaroukhi/generator-asi-templates-backend
-[daviddm-image]: https://david-dm.org/amfaroukhi/generator-asi-templates-backend.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/amfaroukhi/generator-asi-templates-backend
-[coveralls-image]: https://coveralls.io/repos/amfaroukhi/generator-asi-templates-backend/badge.svg
-[coveralls-url]: https://coveralls.io/r/amfaroukhi/generator-asi-templates-backend
+For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
+
+### Using angular-cli
+
+You can also use [Angular CLI][] to generate some custom client code.
+
+For example, the following command:
+
+    ng generate component my-component
+
+will generate few files:
+
+    create src/main/webapp/app/my-component/my-component.component.html
+    create src/main/webapp/app/my-component/my-component.component.ts
+    update src/main/webapp/app/app.module.ts
+
+## Building for production
+
+To optimize the asi-templates-backend application for production, run:
+
+    ./mvnw -Pprod clean package
+
+To ensure everything worked, run:
+
+    java -jar target/*.war
+
+
+Refer to [Using JHipster in production][] for more details.
+
+## Testing
+
+To launch your application's tests, run:
+
+    ./mvnw clean test
+
+For more information, refer to the [Running tests page][].
+
+## Using Docker to simplify development (optional)
+
+You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
+For example, to start a postgresql database in a docker container, run:
+
+    docker-compose -f src/main/docker/postgresql.yml up -d
+
+To stop it and remove the container, run:
+
+    docker-compose -f src/main/docker/postgresql.yml down
+
+You can also fully dockerize your application and all the services that it depends on.
+To achieve this, first build a docker image of your app by running:
+
+    ./mvnw package -Pprod docker:build
+
+Then run:
+
+    docker-compose -f src/main/docker/app.yml up -d
+
+For more information refer to [Using Docker and Docker-Compose][], this page also contains information on the docker-compose sub-generator (`jhipster docker-compose`), which is able to generate docker configurations for one or several JHipster applications.
+
+## Continuous Integration (optional)
+
+To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
+
+[JHipster Homepage and latest documentation]: https://...
+[JHipster 0.1.0 archive]: https://.../documentation-archive/v0.1.0
+
+[Using JHipster in development]: https://.../documentation-archive/v0.1.0/development/
+[Using Docker and Docker-Compose]: https://.../documentation-archive/v0.1.0/docker-compose
+[Using JHipster in production]: https://.../documentation-archive/v0.1.0/production/
+[Running tests page]: https://.../documentation-archive/v0.1.0/running-tests/
+[Setting up Continuous Integration]: https://.../documentation-archive/v0.1.0/setting-up-ci/
+
+
