@@ -85,7 +85,7 @@ jhipster:
     security:
         remember-me:
             # security key (this key should be unique for your application, and kept secret)
-            key: f4fbd5f0003659889ba8a9298bf4b779097b23ba
+            key: 1e5563b846d0f769ceb2b09920c01c34cfe81614
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
         logs: # Reports Dropwizard metrics in the logs
